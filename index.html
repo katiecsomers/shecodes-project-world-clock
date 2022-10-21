@@ -14,27 +14,47 @@
 			rel="stylesheet"
 			href="style.css"
 		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>World Clock</title>
 	</head>
 	<body>
-		<h1>World Clock</h1>
-		<select
-			name="country"
-			id="contry-select"
-		>
-			<option value="wellington">Wellington 🇳🇿</option>
-			<option value="kyoto">Kyoto</option>
-			<option value="singapore">Singapore</option>
-		</select>
-		<div class="city-info">
-			<h2>Berlin</h2>
-			<div class="date">21st Oct 2022</div>
-			<div class="time">13:00</div>
-		</div>
-		<div class="city-info">
-			<h2>Ankara</h2>
-			<div class="date">21st Oct 2022</div>
-			<div class="time">15:00</div>
+		<div class="container">
+			<h1>World Clock</h1>
+			<select
+				name="country"
+				id="contry-select"
+			>
+				<option value="">Search city....</option>
+				<option value="wellington">Wellington 🇳🇿</option>
+				<option value="kyoto">Kyoto</option>
+				<option value="singapore">Singapore</option>
+			</select>
+			<div class="city-info">
+				<div>
+					<h2>Berlin</h2>
+					<div class="date">21st Oct 2022</div>
+				</div>
+				<div class="time">Fri 13:00:00</div>
+			</div>
+			<div class="city-info">
+				<div>
+					<h2>Ankara</h2>
+					<div class="date">21st Oct 2022</div>
+				</div>
+				<div class="time">Fri 15:00:00</div>
+			</div>
 		</div>
 		<footer>
 			<a href="https://github.com/katiecsomers">Coded </a> by

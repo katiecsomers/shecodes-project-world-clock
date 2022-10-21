@@ -1,7 +1,62 @@
+body {
+	font-family: "Raleway", sans-serif;
+}
 h1 {
 	text-align: center;
+	border: 4px ridge #5f6769;
+	border-radius: 7px;
+	margin: 5px 150px;
+	padding: 10px 5px;
+	background: #719192;
+	font-weight: 500;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 footer {
 	text-align: center;
+	margin: 10px;
+}
+
+select {
+	width: 40%;
+	display: flex;
+	margin: 10px 5px;
+	padding: 10px;
+	border-radius: 8px;
+	background: black;
+	color: white;
+	font-family: "Raleway", sans-serif;
+}
+
+.container {
+	display: block;
+	margin: 0 auto;
+
+	border: 1px solid black;
+	max-width: 600px;
+	background: #719192;
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.city-info {
+	background: black;
+	margin: 5px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 8px;
+	padding: 3px;
+	color: white;
+}
+
+.city-info h2 {
+	margin: 0;
+	font-weight: 600;
+}
+
+.time {
+	font-size: 30px;
+}
+.date {
+	opacity: 0.6;
 }
