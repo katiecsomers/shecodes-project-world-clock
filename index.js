@@ -19,4 +19,28 @@ function updateTime() {
 		.tz("Europe/Berlin")
 		.format("[<small>]ddd[</small>] HH:mm:ss");
 }
-setInterval(updateTime, 1000);
+
+function showTime(event) {
+	if (event.target.value.length > 0)
+		setInterval(() => {
+			let newCity = document.querySelector(".default-city");
+			let cityTimeZone = event.target.value;
+			cityName = cityTimeZone.split("/")[1];
+
+			newCity.innerHTML = `<div class="city-info">
+				<div><h2 class="city-name">${cityName}</h2>
+					<div class="date"> ${moment.tz(event.target.value).format("Do MMM YYYY")} </div>
+				</div>
+				<div class="time"> ${moment
+					.tz(event.target.value)
+					.format("[<small>]ddd[</small>] HH:mm:ss")} </div>
+			</div>`;
+
+			clearInterval(refreshIntervalId);
+		}, 1000);
+}
+
+let refreshIntervalId = setInterval(updateTime, 1000);
+
+let countrySelection = document.querySelector("#country-select");
+countrySelection.addEventListener("change", showTime);
