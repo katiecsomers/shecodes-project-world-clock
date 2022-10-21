@@ -25,6 +25,11 @@ function showTime(event) {
 		setInterval(() => {
 			let newCity = document.querySelector(".default-city");
 			let cityTimeZone = event.target.value;
+
+			if (cityTimeZone === "current") {
+				cityTimeZone = moment.tz.guess();
+			}
+
 			cityName = cityTimeZone.split("/")[1];
 
 			newCity.innerHTML = `<div class="city-info">
