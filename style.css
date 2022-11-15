@@ -1,14 +1,16 @@
 body {
 	font-family: serif;
+	background-color: whitesmoke;
 }
 h1 {
 	text-align: center;
-	border: 4px ridge #5f6769;
+	border: 3px ridge black;
 	border-radius: 7px;
 	margin: 5px 150px;
 	padding: 10px 5px;
-	background: #719192;
+	background: #506f83;
 	font-weight: 500;
+	color: black;
 	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -23,8 +25,8 @@ select {
 	margin: 10px 5px;
 	padding: 10px;
 	border-radius: 8px;
-	background: black;
-	color: white;
+	background: #143642;
+	color: whitesmoke;
 	font-family: serif;
 }
 
@@ -35,7 +37,7 @@ small {
 
 .container a {
 	display: block;
-	margin: 0 auto;
+	margin: auto;
 	padding: 5px;
 	text-decoration: none;
 	color: black;
@@ -45,21 +47,22 @@ small {
 .container {
 	display: block;
 	margin: 0 auto;
-	border: 1px solid black;
+	margin-top: 100px;
+	border: 1px solid #144173;
 	max-width: 600px;
-	background: #719192;
+	background: #506f83;
 	border-radius: 8px;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .city-info {
-	background: black;
+	background: #143642;
 	margin: 5px;
 	display: flex;
 	justify-content: space-between;
 	border-radius: 8px;
 	padding: 3px 8px;
-	color: white;
+	color: whitesmoke;
 }
 
 .city-info h2 {

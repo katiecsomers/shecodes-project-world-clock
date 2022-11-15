@@ -1,4 +1,4 @@
-function updateTime() {
+function updateTime(event) {
 	let berlinDateElement = document.querySelector(".berlin .date");
 	berlinDateElement.innerHTML = moment
 		.tz("Europe/Berlin")
@@ -32,6 +32,7 @@ function updateTime() {
 
 function showTime(event) {
 	clearInterval(refreshIntervalId);
+	console.log(event.target.value);
 
 	setInterval(() => {
 		let newCity = document.querySelector(".default-city");
